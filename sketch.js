@@ -7,6 +7,8 @@ var startSize = 100;
 function setup(){
     createCanvas(1200, 700);
     noCursor();
+    rectMode(CENTER);
+    img = loadImage("images/SpongeBob.png");
 }
 
 function draw(){
@@ -14,8 +16,20 @@ function draw(){
     background("black");
 
     //Draw white cursor circle
-    fill("white");
-    ellipse(mouseX, mouseY, 30, 30);
+    if(mouseIsPressed){
+        fill(random()*255, random()*255, random()*255);
+        if(random() <= 0.5){
+            ellipse(mouseX, mouseY, random()*200, random()*200);
+        }else{
+            rect(mouseX, mouseY, random()*200, random()*200);
+        }
+    }else{
+        //fill("white");
+        //ellipse(mouseX, mouseY, 30, 30);
+        w = 80;
+        h = 80;
+        image(img, mouseX - w/2, mouseY - h/2, w, h);
+    }
 
     //Draw letters
     for(i = 0; i < letters.length; i++){
