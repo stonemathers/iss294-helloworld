@@ -28,10 +28,17 @@ function draw(){
             locX.splice(i, 1, x + xoffset);
             locY.splice(i, 1, y + yoffset);
 
-            fill("red");
+            //fill("red");
+            fill(random()*255, random()*255, random()*255);
             textSize(size);
             text(letters[i], locX[i], locY[i]);
             sizes.splice(i, 1, size - 1);
+        }else{
+            letters.splice(i, 1);
+            locX.splice(i, 1);
+            locY.splice(i, 1);
+            sizes.splice(i, 1);
+            i -= 1;
         }
     }
 
