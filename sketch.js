@@ -28,7 +28,6 @@ function draw(){
             locX.splice(i, 1, x + xoffset);
             locY.splice(i, 1, y + yoffset);
 
-            //fill("red");
             fill(random()*255, random()*255, random()*255);
             textSize(size);
             text(letters[i], locX[i], locY[i]);
