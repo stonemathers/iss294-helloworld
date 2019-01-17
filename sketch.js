@@ -4,11 +4,14 @@ var locY = [];
 var sizes= [];
 var startSize = 100;
 
+function preload(){
+    img = loadImage("images/SpongeBob.png");
+}
+
 function setup(){
     createCanvas(1200, 700);
     noCursor();
     rectMode(CENTER);
-    img = loadImage("images/SpongeBob.png");
 }
 
 function draw(){
@@ -26,8 +29,8 @@ function draw(){
     }else{
         //fill("white");
         //ellipse(mouseX, mouseY, 30, 30);
-        w = 80;
-        h = 80;
+        w = img.width/6;
+        h = img.height/6;
         image(img, mouseX - w/2, mouseY - h/2, w, h);
     }
 
