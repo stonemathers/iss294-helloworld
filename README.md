@@ -1,2 +1,2 @@
 # iss294-helloworld
-Hello World for my Interactive Graphics course - Spring 2019
+Hello World project for my Interactive Graphics course - Spring 2019
