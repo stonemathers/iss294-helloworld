@@ -15,7 +15,7 @@ function draw(){
     //Draw background
     background("black");
 
-    //Draw white cursor circle
+    //Draw cursor
     if(mouseIsPressed){
         fill(random()*255, random()*255, random()*255);
         if(random() <= 0.5){
