@@ -22,9 +22,9 @@ function draw(){
     if(mouseIsPressed){
         fill(random()*255, random()*255, random()*255);
         if(random() <= 0.5){
-            ellipse(mouseX, mouseY, random()*200, random()*200);
+            ellipse(mouseX, mouseY, random()*400, random()*400);
         }else{
-            rect(mouseX, mouseY, random()*200, random()*200);
+            rect(mouseX, mouseY, random()*400, random()*400);
         }
     }else{
         //fill("white");
